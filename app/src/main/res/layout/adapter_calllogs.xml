@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mTextViewNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0986545057"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mTextViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTextViewNumber"
+        android:text="[00:00]" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mTextViewCallStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTextViewNumber"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toEndOf="@id/mTextViewDuration"
+        android:layout_toRightOf="@id/mTextViewDuration"
+        android:text="10:20 05/05/2021" />
+</RelativeLayout>

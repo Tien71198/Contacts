@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContactAdapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.uits.baseproject.widget.CircleImageView
+            android:id="@+id/mCircleImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness"
+            app:civ_border_color="#000"
+            app:civ_border_width="0.1dp"/>
+
+        <ImageView
+            android:id="@+id/mImgPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:id="@+id/mTextViewUpCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toRightOf="@id/layout1"
+        android:fontFamily="sans-serif-black"
+        android:text="Name friend"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/mPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTextView"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toRightOf="@id/layout1"
+        android:text="Name friend"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
